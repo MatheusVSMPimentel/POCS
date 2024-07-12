@@ -16,6 +16,7 @@ Console.WriteLine();
 Stopwatch stopwatch = Stopwatch.StartNew();
 // Running a task with a return value
 string result = await Task.Run<string>(()=>TaskAfterTime("Returning a value from a task."));
+string result1 = await TaskAfterTime("Returning a value from a task.");
 // Introducing a delay of 500 milliseconds
 await Task.Delay(500);
 // Stopping the stopwatch
